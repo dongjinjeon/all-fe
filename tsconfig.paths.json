@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@store": ["./src/redux/store"],
+      "@context/*": ["./src/context/*"],
+      "@features/*": ["./src/redux/features/*"],
+      "@services/*": ["./src/redux/services/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@svg/*": ["./src/svg/*"],
+      "@src/*": ["./src/*"]
+    }
+  }
+}

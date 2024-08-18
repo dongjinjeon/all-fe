@@ -1,0 +1,69 @@
+{
+  "name": "alltoon",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@headlessui/react": "^1.7.14",
+    "@react-oauth/google": "^0.11.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@tosspayments/payment-sdk": "^1.7.1",
+    "@tosspayments/payment-widget-sdk": "^0.10.2",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.24",
+    "@types/react": "^18.0.38",
+    "@types/react-dom": "^18.0.11",
+    "axios": "^1.7.2",
+    "craco-alias": "^3.0.1",
+    "dotenv": "^16.4.5",
+    "epubjs": "^0.3.93",
+    "heroicons": "^2.0.17",
+    "i18next": "^22.4.15",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-xhr-backend": "^3.2.2",
+    "jose": "^5.2.2",
+    "jwt-decode": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.2",
+    "react-kakao-login": "^2.1.1",
+    "react-placeholder": "^4.1.0",
+    "react-qr-code": "^2.0.11",
+    "react-redux": "^8.0.5",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "redux-persist": "^6.0.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "deploy": "export PORT=4200 && craco start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}

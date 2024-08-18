@@ -1,0 +1,68 @@
+/* CarouselComponent.css */
+.carousel-container {
+  max-width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.carousel-wrapper .carousel.carousel-slider {
+  max-height: 545px;
+}
+
+.carousel-wrapper2 .carousel.carousel-slider {
+  max-height: 20rem;
+}
+
+.carousel .control-dots {
+  display: flex;
+  inset: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  width: 1200px;
+  height: 1rem;
+}
+
+.carousel .control-dots .dot {
+  width: 1rem;
+  height: 1rem;
+  background: #8e8e8e;
+}
+
+@media (max-width: 767px) {
+  .carousel .control-dots {
+    padding-bottom: 0;
+  }
+  .carousel .control-dots .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #8e8e8e;
+  }
+}
+
+.carousel .control-dots .selected {
+  background: #3fc1be;
+}
+
+.carousel-slide {
+  /* height: 545px; */
+  max-height: 545px;
+  height: 50vw;
+}
+
+.carousel-slide2 {
+  height: 45vw;
+  max-height: 320px;
+  /* max-height: max-content; */
+}
+
+@media (max-width: 1240px) {
+  .carousel-slide {
+    height: 55vw;
+  }
+  .carousel-slide2 {
+    height: 50vw;
+  }
+}

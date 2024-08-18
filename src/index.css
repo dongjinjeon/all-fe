@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @font-face {
+    font-family: "SpoqaHanSansNeo-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "NanumBarunGothic";
+    font-style: normal;
+    font-weight: 400;
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+        format("embedded-opentype"),
+      url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+        format("woff"),
+      url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+        format("truetype");
+  }
+
+  @font-face {
+    font-family: "NanumBarunGothic";
+    font-style: normal;
+    font-weight: 700;
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix")
+        format("embedded-opentype"),
+      url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff")
+        format("woff"),
+      url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf")
+        format("truetype");
+  }
+
+  @font-face {
+    font-family: "NanumBarunGothic";
+    font-style: normal;
+    font-weight: 300;
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+    src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix")
+        format("embedded-opentype"),
+      url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff")
+        format("woff"),
+      url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf")
+        format("truetype");
+  }
+
+  .nanumbarungothic * {
+    font-family: "NanumBarunGothic", sans-serif;
+  }
+
+  @font-face {
+    font-family: "KoPubWorldBatang";
+    font-weight: 300;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangLight.eot");
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangLight.eot?#iefix")
+        format("embedded-opentype"),
+      url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangLight.woff2")
+        format("woff2"),
+      url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangLight.woff")
+        format("woff"),
+      url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangLight.ttf")
+        format("truetype");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "KoPubWorldBatang";
+    font-weight: 500;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangMedium.eot");
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangMedium.eot?#iefix")
+        format("embedded-opentype"),
+      url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangMedium.woff2")
+        format("woff2"),
+      url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangMedium.woff")
+        format("woff"),
+      url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangMedium.ttf")
+        format("truetype");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "KoPubWorldBatang";
+    font-weight: 700;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangBold.eot");
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangBold.eot?#iefix")
+        format("embedded-opentype"),
+      url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangBold.woff2")
+        format("woff2"),
+      url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangBold.woff")
+        format("woff"),
+      url("https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangBold.ttf")
+        format("truetype");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "NanumBarunpen";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Cafe24SsurroundAir";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "GyeonggiBatang";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "UhBeeMiMi";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeMiMi.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.text-ellipsis-2-line {
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.hide-scroll {
+  scrollbar-width: none;
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
