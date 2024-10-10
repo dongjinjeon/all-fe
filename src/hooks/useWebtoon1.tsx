@@ -1,16 +1,18 @@
 import { LanguageContext } from "@context/LanguageContext";
 import {
-  useGetBannerMutation,
-  useGetMillionWebtoonMutation,
-  useGetNewWebtoonMutation,
-  useGetPopularWebtoonMutation,
-  useGetTodayFreeWebtoonMutation,
-  useSearchWebtoonMutation,
+    useGetBannerMutation,
+    useGetMillionWebtoonMutation,
+    useGetNewWebtoonMutation,
+    useGetPopularWebtoonMutation,
+    useGetTodayFreeWebtoonMutation,
+    useSearchWebtoonMutation,
 } from "@services/webtoon";
 import { useContext, useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 export const useWebtoon = () => {
   const { currentLanguage } = useContext(LanguageContext);
+  const navigate = useNavigate();
 
   const placeholderBanner = [{ imageURL: "/bannerplaceholder.webp" }];
   const placeholderType1 = Array.from({ length: 5 }, () => ({
@@ -184,19 +186,6 @@ export const useWebtoon = () => {
       return !!token;  
     };
 
-    const handleBannerClick = (banner: any) => {
-      if (banner.category === "shinhan") {
-        if (isUserLoggedIn()) {
-          window.location.href = banner.externalLinkURL;  
-        } else {
-          navigate("/login"); 
-        }
-      } else {
-        
-        window.location.href = banner.linkURL;
-      }
-    };
-
     getSubBanner({
       page: 1,
       count: 5,
@@ -300,6 +289,14 @@ export const useWebtoon = () => {
     });
   };
 
+  const handleBannerClick = (banner: any) => {
+    if (banner.externalLinkURL) {
+      window.location.href = banner.externalLinkURL;  
+    } else {
+      navigate("/login"); 
+    }
+  };
+
   return {
     todayFreeWebtoon,
     rankingWebtoon,
@@ -307,7 +304,6 @@ export const useWebtoon = () => {
     popularWebtoon,
     searchResultWebtoons,
     newWebtoon,
-    mainBanner,
     subBanner,
     genreRankingWebtoon,
     listedWebtoon,

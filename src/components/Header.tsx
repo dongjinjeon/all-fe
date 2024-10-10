@@ -141,7 +141,7 @@ export const Header = () => {
           style={{
             height: height,
             width: width,
-          }} onClick={()=> setIsDrawerOpen(prev => !prev)}></div>}
+          }} onClick={()=> setIsDrawerOpen((prev: boolean) => !prev)}></div>}
       {isDrawerOpen &&
         <div id='menu' className="absolute z-[101] w-[320px] bg-white h-screen right-0 p-5 max-sm:w-[85%]" style={{top:scroll}}>
           <div className="text-xl font-bold mb-5">내 정보</div>
@@ -414,7 +414,7 @@ export const Header = () => {
               </div>
             </div>
             <div className="hidden items-center cursor-pointer ml-auto max-header:flex"
-                 onClick={() => setIsDrawerOpen(prev => !prev)}>
+                 onClick={() => setIsDrawerOpen((prev: boolean) => !prev)}>
               {width <= 1024 ?
                   <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24}>
                   <path

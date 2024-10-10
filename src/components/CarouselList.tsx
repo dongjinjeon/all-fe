@@ -4,7 +4,23 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 
-const CarouselList = ({
+interface CarouselListProps {
+  data: any[];
+  title: React.ReactNode;
+  hasNav?: boolean;
+  hasMore?: boolean;
+  double?: boolean;
+  navTo?: string;
+  isEName?: boolean;
+  isSix?: boolean;
+  isBought?: boolean;
+  isLeft?: boolean;
+  hasNotNav?: boolean;
+  noMoreText?: boolean;
+  setExpiredPopup?: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const CarouselList: React.FC<CarouselListProps> = ({
   data,
   title,
   hasNav,
@@ -83,7 +99,18 @@ const CarouselList = ({
     }
   };
 
-  const CarouselContent = ({
+  interface CarouselContentProps {
+    image: string;
+    title: string;
+    id: string;
+    isWebtoon: number;
+    isSix?: boolean;
+    isBought?: boolean;
+    data: any;
+    setExpiredPopup?: React.Dispatch<React.SetStateAction<boolean>>;
+  }
+
+  const CarouselContent: React.FC<CarouselContentProps> = ({
     image,
     title,
     id,
@@ -96,7 +123,7 @@ const CarouselList = ({
     const handleClick = () => {
       if (isBought) {
         if (data?.ExpiredAt !== "None" && new Date() > new Date(data?.ExpiredAt.replace(/-/g, '/'))) {
-          setExpiredPopup(true);
+          setExpiredPopup?.(true);  // 옵셔널 체이닝 연산자 사용
         } else {
           navigate(
             isEName
